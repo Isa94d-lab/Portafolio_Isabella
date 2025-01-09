@@ -62,4 +62,70 @@
     <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,73.53 C149.99,150.00 367.10,-26.13 500.27,56.75 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>
     </div>
 </div>
+<!-- Hasta aqui CONTEINER 1 -->
+
+
+<!-- CONTEINER 2 -->
+
+<div class="conteiner2" id="conteiner2">
+    <div class="orden">
+    <p class="about">About Me</p>
+    <p class="info">Soy estudiante en formación de
+        desarrollo web con conocimientos 
+        básicos en Python, HTML y CSS. Me
+        gradué de bachiller en 2023 con
+        especialización en inglés y un curso
+        adicional en 2024. Tengo experiencia 
+        gestionando reservas en un hotel, donde
+        desarrollé habilidades en atención al
+        cliente y comunicación efectiva. Siempre
+        estoy dispuesta a mejorar mis
+        habilidades y adquirir nuevos
+        conocimientos.</p>
+    </div>
+    <img src="img/Bombilla_ONN.png" usemap="#Bombillo" id="LuzON">
+    <img class="dragon dragonNormal" src="img/DragonSa.jpeg" style="position: absolute;">
+    <img class="dragon dragonNeon" src="img/DragonNeonnF.jpeg" style="display: none; position: absolute;">
+    <img class="mancha" src="img/trythis.png" style="display: none; position: absolute;">
+
+    <map name="Bombillo">
+    <area shape="poly" coords="102, 152, 92, 166, 83, 192, 102, 226, 134, 224, 155, 205, 151, 178, 136, 150" href="#" id="MapBombillo">
+    </map>
+
+    <!-- Par que cuando el usuario le de click al bombillo, las imagenes cambien -->
+    <script>
+        const imagenNormal = document.querySelector('.dragonNormal');  // Imagen DragonSa.jpeg
+        const imagenNeon = document.querySelector('.dragonNeon');  // Imagen DragonNeonnF.jpeg
+        const bombilla = document.getElementById('LuzON');  // Imagen de la bombilla
+        const mancha = document.querySelector('.mancha')
+
+        // Alternar imagen de la bombilla y las imagenes del dragon cuando se haga clic en el area del mapa
+        document.getElementById('MapBombillo').addEventListener('click', function (event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del área
+        // Cambia la visibilidad de las imagenes
+        if (imagenNormal.style.display !== "none") {
+            imagenNormal.style.display = "none";  // Oculta la imagen normal
+            imagenNeon.style.display = "block";   // Muestra la imagen neon
+        } else {
+            imagenNormal.style.display = "block"; // Muestra la imagen normal
+            imagenNeon.style.display = "none";    // Oculta la imagen neon
+        }
+
+        // Alternar la imagen de la bombilla
+        if (bombilla.src.includes('Bombilla_ONN.png')) {
+            bombilla.src = 'img/BombillaSI_OFF.png'; // Cambia a BombillaSI_OFF.png
+        } else {
+            bombilla.src = 'img/Bombilla_ONN.png';  // Vuelve a Bombilla_ONN.png
+        }
+        // Mostrar u ocultar la mancha
+        if (mancha.style.display === "none") {
+            mancha.style.display = "block"; // Muestra la mancha
+        } else {
+            mancha.style.display = "none";  // Oculta la mancha
+        }
+    });
+    </script>
+</div>
+<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 275.11,-26.13 501.97,57.73 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path></svg></div>
+
 

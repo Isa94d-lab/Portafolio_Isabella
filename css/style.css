@@ -203,3 +203,123 @@ td {
   width: 100%;
   height: 100%;
 }
+/*             HASTA AQUI CONTEINER 1              */
+
+/*         ---          CONTEINER 2         ---          */
+
+/* */
+.conteiner2 {
+    padding-top: 200px;
+    padding-bottom: 1000px;
+    background-color: #000000;
+    color: white;
+    z-index: 1; 
+    position: relative;
+  }
+  
+  /* Le otorgo una posicion al about*/
+  .about {
+    font-size: 60px;
+    margin-top: 10px;
+    padding-top: 90px;
+    margin-left: 900px;
+  }
+  
+  /* Le otorgo una posicion la informacion*/
+  .info {
+    font-size: 40px;
+    margin-left: 1000px;
+    margin-right: 80px;
+    text-align: justify;
+  }
+  
+  
+  .about, .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  
+    text-shadow: 
+      0px 0px 20px rgba(0, 0, 0, 1),  
+      5px 5px 30px rgba(0, 0, 0, 1),   
+      10px 10px 50px rgba(0, 0, 0, 1); 
+  }
+  
+  .dragon{
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    height: 1100px;
+    z-index: -1;
+    margin-top: -270px;
+  }
+  
+  .dragonNeon {
+    display: none;
+  }
+  
+  #LuzON {
+    display: flex;
+    position:relative;
+    width: 300px;
+    height: 300px;
+    margin-left: 1400px;
+    margin-top: -910px;
+    cursor: pointer;
+  }
+  
+  .mancha {
+    width: 250px;
+    height: 250px;
+    margin-left: 940px;
+    margin-top: -200px;
+    z-index: -1;
+  }
+  
+  /*      ---     RESPONSIVE CONTEINER 2      ---     */
+  @media screen and (max-width: 800px) {
+  
+    .conteiner2 {
+      padding-top: 50px !important;
+      padding-bottom: 500px !important;
+    }
+  
+    .about {
+      font-size: 30px;
+      margin-left: auto;
+      padding-top: auto;
+      margin-top: 200px;
+    }
+  
+    .info {
+      font-size: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: justify;
+    }
+  
+    .dragon {
+      margin-top: auto !important;
+      width: 500px;
+      height: 550px;
+      margin-top: -250px !important;
+      margin-left: -200px;
+    }
+    #LuzON {
+  
+      margin-left: 252px !important;
+      margin-top: -660px !important;
+      z-index: 1;
+    }
+  
+    .mancha {
+      width: 100px;
+      height: 100px;
+      margin-left: 450px;
+      margin-top: -50px;
+      z-index: 1;
+    }
+  }
+
+/*             HASTA AQUI CONTEINER 2              */
