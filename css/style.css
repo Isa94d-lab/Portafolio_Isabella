@@ -91,3 +91,115 @@ li.nav-link a {
 }
 
 /*             HASTA AQUI LA BARRA DE OPCIONES              */
+
+
+/*         ---          CONTEINER 1         ---          */
+
+body {
+    font-family: 'Oswald';
+    color: rgb(0, 0, 0);
+}
+
+table {
+  margin: 0 auto;
+  display:flex;
+  width: 100%;
+  align-items: center;
+  /*Para que el espacio que hay en las columnas se mantenga y no cambie*/
+  table-layout: fixed;
+}
+
+td {
+  width: 1000px;
+  height: 750px;
+
+  text-align: center;
+}
+
+.experience {
+  margin-top: 10px;
+  position: relative; 
+  margin-left: 10px; 
+  width: 70%; 
+}
+
+@media screen and (max-width: 800px) {
+
+  td {
+    height: 350px;
+    width: 50%;
+  }
+
+  .p1 {
+    font-size: 40px !important;
+    margin-left: -75px !important;
+  }
+  .p2 {
+    font-size: 25px !important;
+    margin-left: -75px !important;
+  }
+  .line {
+    margin-left: 25px !important;
+  }
+
+  .wave {
+    margin-top: -40px;
+    margin-bottom: -10px;
+  }
+
+  .perfil {
+    margin-right: 100px !important;
+  }
+
+  .experience {
+    margin-top: 10px;
+    position: relative; 
+    margin-left: 10px; 
+    width: 80%; 
+  }
+
+}
+
+.conteiner1 p {
+  text-align: left;
+  margin: 0;
+  padding-left: 100px;
+}
+
+.p1 {
+  font-size: 100px;
+}
+
+.p2 {
+  font-size: 60px;
+}
+  
+.line {
+  position: relative; 
+  margin-left: 100px; 
+  width: 30%; 
+  border: none; 
+  border-top: 6px solid #000000; 
+
+}
+
+.perfil {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  position: sticky ;
+  z-index: -1;
+} 
+
+.wave {
+  position: static;
+  bottom: 0; 
+  left: 0; 
+  width: 100%;
+  z-index: 10; 
+}
+
+.wave svg {
+  width: 100%;
+  height: 100%;
+}
