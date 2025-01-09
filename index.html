@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio/Isabella</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <!-- Inicio BARRA DE OPCIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav>
+        <h2 class="logo"></h2>
+        <div class="bars">
+          <i class="fa fa-bars"></i>
+        </div>
+        <!-- Esto nos permitira que cuando el usuario haga click en uno de botones los lleve a una parte especifica de la pagina -->
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#conteiner1">Home</a></li>
+          <li class="nav-link"><a href="#conteiner2">About</a></li>
+          <li class="nav-link"><a href="#conteiner3">Portafolio</a></li>
+          <li class="nav-link"><a href="#conteiner4">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const bars = document.querySelector(".bars");
+        const nav = document.querySelector("nav");
+    
+        bars.onclick = () => {
+          nav.classList.toggle("active");
+        };
+    </script>
+
+<!-- Hasta aqui la barra de opciones -->
